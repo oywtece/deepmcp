@@ -1,5 +1,10 @@
 # Deep Matching, Correlation and Prediction (DeepMCP) Model
 
+DeepMCP is a model for click-through rate (CTR) prediction. Most existing methods mainly model the feature-CTR relationship and suffer from the data sparsity issue. In contrast, DeepMCP models other types of relationships in order to learn more informative and statistically reliable feature representations, and in consequence to improve the performance of CTR prediction. In particular, DeepMCP contains three parts: a matching subnet, a correlation subnet and a prediction subnet. These subnets model the user-ad, ad-ad and feature-CTR relationship respectively. When these subnets are jointly optimized under the supervision of the target labels, the learned feature representations have both good prediction powers and good representation abilities. 
+
+If you use this code, please cite the following paper:
+* **Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du. Representation Learning-Assisted Click-Through Rate Prediction. In IJCAI, 2019.**
+
 #### TensorFlow (TF) version
 1.3.0
 
