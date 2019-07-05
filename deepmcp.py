@@ -20,6 +20,7 @@ test_file_name = cfg.test_file_name
 batch_size = cfg.batch_size
 n_ft = cfg.n_ft
 k = cfg.k
+kp_prob = cfg.kp_prob
 n_epoch = cfg.n_epoch
 max_num_lower_ct = cfg.max_num_lower_ct
 record_step_size = cfg.record_step_size
@@ -384,7 +385,7 @@ with tf.Session(config=config) as sess:
             
             # training
             sess.run(optimizer, feed_dict={x_input:train_ft_inst, y_target:train_label_inst, \
-                                           x_input_corr:train_ft_corr_inst, keep_prob:1.0})
+                                           x_input_corr:train_ft_corr_inst, keep_prob:kp_prob})
             
             # record loss and accuracy every step_size generations
             if (epoch+1)%record_step_size == 0:                
