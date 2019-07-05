@@ -25,6 +25,7 @@ k = 10 # embedding dim for each ft
 alpha = 5 # balancing para for the matching subnet
 beta = 0.01 # balancing para for the correlation subnet
 batch_size = 128 # batch size of the 1st dataset
+kp_prob = 1.0 # keep prob in dropout; set to 1.0 if n_epoch = 1
 opt_alg = 'Adagrad' # 'Adam'
 eta = 0.05 # learning rate
 max_num_lower_ct = 100 # early stop if the metric does not improve over the validation set after max_num_lower_ct times
