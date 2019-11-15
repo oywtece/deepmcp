@@ -143,7 +143,7 @@ bias_dict = {}
 for i in range(0, n_layer):
     out_dim = layer_dim[i]
     weight_dict[i] = tf.Variable(tf.random_normal(shape=[in_dim, out_dim], stddev=np.sqrt(2.0/(in_dim+out_dim))))
-    bias_dict[i] = tf.Variable(tf.constant(0.1, shape=[out_dim]))
+    bias_dict[i] = tf.Variable(tf.constant(0.0, shape=[out_dim]))
     in_dim = layer_dim[i]
 
 ################################
@@ -324,4 +324,3 @@ with tf.Session(config=config) as sess:
         f.write('train_loss_list =' + str(train_loss_list) + '\n')
         f.write('val_auc_list =' + str(val_auc_list) + '\n')
         f.write('-'*50 + '\n')
-
