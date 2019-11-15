@@ -228,7 +228,7 @@ bias_dict = {}
 for i in range(0, n_layer):
     out_dim = layer_dim[i]
     weight_dict[i] = tf.Variable(tf.random_normal(shape=[in_dim, out_dim], stddev=np.sqrt(2.0/(in_dim+out_dim))))
-    bias_dict[i] = tf.Variable(tf.constant(0.1, shape=[out_dim]))
+    bias_dict[i] = tf.Variable(tf.constant(0.0, shape=[out_dim]))
     in_dim = layer_dim[i]
 
 ################################
@@ -242,7 +242,7 @@ for i in range(0, n_layer_corr):
     out_dim_corr = layer_dim_corr[i]
     weight_dict_corr[i] = tf.Variable(tf.random_normal(shape=[in_dim_corr, out_dim_corr],\
                         stddev=np.sqrt(2.0/(in_dim_corr+out_dim_corr))))
-    bias_dict_corr[i] = tf.Variable(tf.constant(0.1, shape=[out_dim_corr]))
+    bias_dict_corr[i] = tf.Variable(tf.constant(0.0, shape=[out_dim_corr]))
     in_dim_corr = layer_dim_corr[i]
 ################################
 
