@@ -5,7 +5,7 @@ DeepMCP is a model for click-through rate (CTR) prediction. Most existing method
 If you use this code, please cite the following paper:
 * **Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, Yanlong Du. Representation Learning-Assisted Click-Through Rate Prediction. In IJCAI, 2019.**
 
-arXiv: https://arxiv.org/abs/1906.04365
+arXiv: https://arxiv.org/abs/1906.04365 [Extended version]
 
 IJCAI: https://www.ijcai.org/proceedings/2019/634
 
