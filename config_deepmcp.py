@@ -1,17 +1,17 @@
 '''
 config file
 '''
-
 # first dataset
-n_one_hot_slot = 22 # num of one-hot slots in the 1st dataset
-n_mul_hot_slot = 3 # num of mul-hot slots in the 1st dataset
-max_len_per_slot = 10 # max num of fts per mul-hot slot in the 1st dataset
-n_ft = 29997247 # num of unique fts in the 1st dataset
-num_csv_col = 53 # num of cols in the csv file (1st dataset)
-# total_n_slot = n_one_hot_slot + n_mul_hot_slot = 22+3 = 25
-# the following indices are w.r.t. these total_n_slot(=25) slots, starting from slot idx 0
-user_ft_idx = [0, 9, 16, 17, 18, 19, 20, 21, 22, 24] # idx of user (& query) fts
-ad_ft_idx = [1, 2, 4, 5, 6, 7, 8, 13, 14, 15, 23] # idx of ad fts
+n_one_hot_slot = 25 # num of one-hot slots in the 1st dataset
+n_mul_hot_slot = 2 # num of mul-hot slots in the 1st dataset
+max_len_per_slot = 5 # max num of fts per mul-hot slot in the 1st dataset
+n_ft = 42301586 # num of unique fts in the 1st dataset
+num_csv_col = 561 # num of cols in the csv file (1st dataset)
+# total_n_slot = n_one_hot_slot + n_mul_hot_slot = 25+2 = 27
+# the following indices are w.r.t. these total_n_slot(=27) slots, starting from slot idx 0
+# in the sample csv data, slot idx 0 is bias; it does not belong to user or ad fts
+user_ft_idx = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 25] # idx of user (& query) fts
+ad_ft_idx = [1, 2, 19, 20, 21, 22, 23, 24, 26] # idx of ad fts
 
 pre = './data/'
 suf = '.csv'
