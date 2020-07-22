@@ -9,6 +9,17 @@ arXiv: https://arxiv.org/abs/1906.04365 [Extended version]
 
 IJCAI: https://www.ijcai.org/proceedings/2019/634
 
+Bibtex
+```
+@inproceedings{ouyang2019representation,
+  title={Representation Learning-Assisted Click-Through Rate Prediction},
+  author={Ouyang, Wentao and Zhang, Xiuwu and Ren, Shukui and Qi, Chao and Liu, Zhaojie and Du, Yanlong},
+  booktitle={IJCAI},
+  pages={4561--4567},
+  year={2019}
+}
+```
+
 #### TensorFlow (TF) version
 1.3.0
 
