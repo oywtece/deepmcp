@@ -9,7 +9,7 @@ arXiv: https://arxiv.org/abs/1906.04365 [Extended version]
 
 IJCAI: https://www.ijcai.org/proceedings/2019/634
 
-Bibtex
+#### Bibtex
 ```
 @inproceedings{ouyang2019representation,
   title={Representation Learning-Assisted Click-Through Rate Prediction},
